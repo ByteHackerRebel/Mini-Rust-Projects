@@ -74,7 +74,6 @@ fn  miles_to_kilo(){
         }
     };
     let result=dis*1.60934;
-
     println!("The distance in kilometrs are {:.2} ",result);
 
 }
