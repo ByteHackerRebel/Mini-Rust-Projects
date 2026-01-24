@@ -27,15 +27,14 @@ fn main(){
 }
 
 
-fn rev_num(num: i32){
+fn rev_num(mut num: i32){
 
         let mut reverse=0;     
-        let mut o_num=num;
 
-    while o_num != 0{
-        let digit = o_num % 10; // Get last digit
+    while num != 0{
+        let digit = num % 10; // Get last digit
         reverse = reverse * 10 + digit; // APpend digit to reverse
-        o_num = o_num / 10; // remove last digit
+        num = num / 10; // remove last digit
 
     }
     
