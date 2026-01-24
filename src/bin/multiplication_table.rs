@@ -22,6 +22,10 @@ fn main() {
         }
     };
 
+    cal_mul(num);
+}
+
+fn cal_mul(num: i32) {
     // Print multiplication table from 1 to 10
     for i in 1..=10 {
         // {} is a placeholder; {num} and {i} are Rust 1.58+ "named" format specifiers
