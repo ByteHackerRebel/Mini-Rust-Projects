@@ -14,7 +14,7 @@ fn main() {
 
     // Try to convert the input into an integer
     let number: i32 = match input.trim().parse() {
-        Ok(num) => num,          // Successfully parsed number
+        Ok(num) => num, // Successfully parsed number
         Err(_) => {
             // Handle invalid input
             println!("Invalid number! Please enter a valid integer.");
@@ -22,7 +22,11 @@ fn main() {
         }
     };
 
-    // Check if the number is even or odd
+    even_odd(number);
+}
+
+// Check if the number is even or odd
+fn even_odd(number: i32) {
     if number % 2 == 0 {
         println!("{} is Even", number);
     } else {
